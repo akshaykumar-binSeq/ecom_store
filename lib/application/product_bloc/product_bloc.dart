@@ -1,8 +1,8 @@
-import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:ecom_store/domain/core/network/network_failures.dart';
 import 'package:ecom_store/domain/product/i_product_repository.dart';
 import 'package:ecom_store/infrastructure/repositories/product/product_details_response_model.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'product_bloc.freezed.dart';

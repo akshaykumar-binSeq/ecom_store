@@ -1,9 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.binarySequence.ecom_store">
+
+   <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
         android:label="ecom_store"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        
         <activity
             android:name=".MainActivity"
             android:exported="true"

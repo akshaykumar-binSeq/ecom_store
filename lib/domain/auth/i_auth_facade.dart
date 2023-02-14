@@ -5,6 +5,5 @@ import 'package:ecom_store/domain/auth/user.dart';
 abstract class IAuthFacade {
   Future<Option<User>> getSignedInUser();
   Future<Either<AuthFailure, Unit>> signInWithGoogle();
-  Future<Either<AuthFailure, Unit>> signInWithPhone();
   Future<void> signOut();
 }

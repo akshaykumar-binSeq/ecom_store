@@ -109,10 +109,10 @@ class ProductDetailsListView extends StatelessWidget {
                             image: imageProvider, fit: BoxFit.cover),
                       ),
                     ),
-                    errorWidget: (context, url, error) => Container(
+                    errorWidget: (context, url, error) => const SizedBox(
                       width: double.infinity,
                       height: double.infinity,
-                      child: const Image(
+                      child: Image(
                         image: AssetImage('assets/image/food_items.jpg'),
                         fit: BoxFit.cover,
                       ),
@@ -124,15 +124,14 @@ class ProductDetailsListView extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 36.0, top: 15),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Material(
-                  borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(25),
-                      bottomLeft: Radius.circular(25)),
-                  color: Colors.green,
-                  child: InkWell(
+            child: Material(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(25),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  InkWell(
                     onTap: () {},
                     splashColor: Colors.green[800],
                     customBorder: RoundedRectangleBorder(
@@ -151,24 +150,18 @@ class ProductDetailsListView extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(7),
-                  color: Colors.green,
-                  child: const Text(
-                    '0',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.green,
+                    child: const Text(
+                      '0',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ),
-                ),
-                Material(
-                  color: Colors.green,
-                  borderRadius: const BorderRadius.only(
-                      topRight: Radius.circular(25),
-                      bottomRight: Radius.circular(25)),
-                  child: InkWell(
+                  InkWell(
                     onTap: () {},
                     splashColor: Colors.green[800],
                     customBorder: RoundedRectangleBorder(
@@ -186,9 +179,9 @@ class ProductDetailsListView extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           ),
           if (categoryDish.addonCat?.isNotEmpty ?? false)

@@ -18,11 +18,20 @@ dependencies:
   freezed_annotation: ^2.2.0
   dartz: ^0.10.1
   get: ^4.6.5
+  firebase_core: ^2.5.0
+  firebase_auth: ^4.2.6
+  google_sign_in: ^5.4.4
   connection_notifier: ^1.0.1
+  another_flushbar: ^1.12.29
   cached_network_image: ^3.2.3
   fluttertoast: ^8.1.3
   tab_container: ^2.0.0
   dio: ^4.0.6
+  otp_text_field: ^1.1.3
+  uuid: ^3.0.7
+  country_picker: ^2.0.19
+  firebase_phone_auth_handler: ^1.0.8
+  pinput: ^2.2.23
 
 dev_dependencies:
   flutter_test:

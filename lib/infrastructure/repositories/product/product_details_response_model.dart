@@ -192,6 +192,7 @@ class CategoryDish {
       };
 }
 
+// ignore: constant_identifier_names
 enum DishCurrency { SAR }
 
 final dishCurrencyValues = EnumValues({"SAR": DishCurrency.SAR});

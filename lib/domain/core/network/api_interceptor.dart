@@ -148,10 +148,6 @@ ERROR MESSAGE: ${err.response?.statusMessage ?? ''}
         // SharedPrefs.logOut();
       }
     } else {
-      print(err.message);
-      print(err.response);
-      print(err.error);
-      print(err.stackTrace);
       log(
         '',
         name: 'ERROR NULL RESPONSE',

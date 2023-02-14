@@ -51,10 +51,10 @@ Either<ValueFailure<String>, String> validatePassword(String input) {
   }
 }
 
-Either<ValueFailure<int>, int> validatePhoneNumber(int input) {
-  if (input.toString().length == 10) {
+Either<ValueFailure<String>, String> validatePhoneNumber(String? input) {
+  if (input != null && input.length >= 10 && input.length <= 15) {
     return right(input);
   } else {
-    return left(ValueFailure.invalidPhoneNumber(failedValue: input));
+    return left(ValueFailure.invalidPhoneNumber(failedValue: input ?? ""));
   }
 }

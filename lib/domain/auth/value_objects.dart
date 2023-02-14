@@ -8,7 +8,6 @@ class EmailAddress extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory EmailAddress(String input) {
-    assert(input != null);
     return EmailAddress._(
       validateEmailAddress(input),
     );
@@ -22,7 +21,6 @@ class Password extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory Password(String input) {
-    assert(input != null);
     return Password._(
       validatePassword(input),
     );
@@ -31,12 +29,11 @@ class Password extends ValueObject<String> {
   const Password._(this.value);
 }
 
-class PhoneNumber extends ValueObject<int> {
+class PhoneNumber extends ValueObject<String> {
   @override
-  final Either<ValueFailure<int>, int> value;
+  final Either<ValueFailure<String>, String> value;
 
-  factory PhoneNumber(int input) {
-    assert(input != null);
+  factory PhoneNumber(String input) {
     return PhoneNumber._(
       validatePhoneNumber(input),
     );

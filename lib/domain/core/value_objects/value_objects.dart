@@ -3,7 +3,7 @@ import 'package:ecom_store/domain/core/errors.dart';
 import 'package:ecom_store/domain/core/failures.dart';
 import 'package:ecom_store/domain/core/validate_interface.dart';
 import 'package:ecom_store/domain/core/value_validators.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter/foundation.dart';
 import 'package:uuid/uuid.dart';
 
 @immutable
@@ -34,9 +34,9 @@ abstract class ValueObject<T> implements IValidatable {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-    return o is ValueObject<T> && o.value == value;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    return other is ValueObject<T> && other.value == value;
   }
 
   @override
@@ -53,13 +53,12 @@ class UniqueId extends ValueObject<String> {
   // We cannot let a simple String be passed in. This would allow for possible non-unique IDs.
   factory UniqueId() {
     return UniqueId._(
-      right(Uuid().v1()),
+      right(const Uuid().v1()),
     );
   }
 
   /// Used with strings we trust are unique, such as database IDs.
   factory UniqueId.fromUniqueString(String uniqueIdStr) {
-    assert(uniqueIdStr != null);
     return UniqueId._(
       right(uniqueIdStr),
     );
@@ -73,7 +72,6 @@ class StringSingleLine extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
   factory StringSingleLine(String input) {
-    assert(input != null);
     return StringSingleLine._(
       validateSingleLine(input),
     );

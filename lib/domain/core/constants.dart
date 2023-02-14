@@ -67,7 +67,7 @@ double getFileSizeInMb(File file) {
 TextStyle boldHeading = const TextStyle(
     fontSize: 21, fontWeight: FontWeight.bold, color: Colors.black54);
 
-TextStyle appBarText = TextStyle(
+TextStyle appBarText = const TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.w600,
 );
