@@ -127,14 +127,13 @@ class CartWidget extends StatelessWidget {
                               height: 40,
                               width: screenWidth - 40,
                               child: ElevatedButton(
-                                  onPressed: () {
+                                  onPressed: () async {
                                     context
                                         .read<CartBloc>()
                                         .add(const CartEvent.clearCart());
                                     context
                                         .read<CartBloc>()
                                         .add(const CartEvent.started());
-                                    Get.to(() => const HomeScreen());
                                     Get.defaultDialog(
                                       title: "Order Summary",
                                       middleText: "Order successfully placed!",
@@ -144,6 +143,8 @@ class CartWidget extends StatelessWidget {
                                       middleTextStyle:
                                           const TextStyle(color: Colors.white),
                                     );
+
+                                    Get.to(() => const HomeScreen());
                                   },
                                   style: ElevatedButton.styleFrom(
                                       backgroundColor: Colors.green),
