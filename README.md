@@ -1,16 +1,3 @@
 # ecom_store
 
-An e-commerce platform to trade food products.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+An e-commerce store application for ordering foods. Flutter application implemented with bloc state management in DDD architecture. User authentication implemented with firebase phone and google auth. cart database implemented with hive. This is for just a reference model of ecom applications. 
