@@ -36,8 +36,8 @@ class ProductHomeScreen extends StatelessWidget {
                                 child:
                                     Text('Unexpected Error, Contact Support')),
                             serverError: (v) => Center(
-                                child:
-                                    Text('Server Error Code: ${v.errorCode}')),
+                                child: Text(
+                                    'Server Error Code: //${v.errorCode}')),
                             serverTimeOut: (v) => const Center(
                                 child: Text('Server Timed-out, Retry')));
                       },

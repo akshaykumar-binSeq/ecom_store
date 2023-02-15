@@ -2,7 +2,12 @@
 //
 //     final productDetailsModel = productDetailsModelFromJson(jsonString);
 
+// ignore_for_file: constant_identifier_names
+
 import 'dart:convert';
+
+import 'package:hive/hive.dart';
+part 'product_details_response_model.g.dart';
 
 List<ProductDetailsModel> productDetailsModelFromJson(String str) =>
     List<ProductDetailsModel>.from(
@@ -96,6 +101,7 @@ class TableMenuList {
       };
 }
 
+@HiveType(typeId: 2)
 class AddonCat {
   AddonCat({
     this.addonCategory,
@@ -105,10 +111,14 @@ class AddonCat {
     this.addons,
   });
 
+  @HiveField(0)
   String? addonCategory;
+  @HiveField(1)
   String? addonCategoryId;
+  @HiveField(2)
   String? addonSelection;
   String? nexturl;
+  @HiveField(3)
   List<CategoryDish>? addons;
 
   factory AddonCat.fromJson(Map<String, dynamic> json) => AddonCat(
@@ -131,6 +141,7 @@ class AddonCat {
       };
 }
 
+@HiveType(typeId: 1)
 class CategoryDish {
   CategoryDish({
     this.dishId,
@@ -146,17 +157,30 @@ class CategoryDish {
     this.addonCat,
   });
 
+  @HiveField(0)
   String? dishId;
+  @HiveField(1)
   String? dishName;
+  @HiveField(2)
   String? dishPrice;
+  @HiveField(3)
   String? dishImage;
+  @HiveField(4)
   DishCurrency? dishCurrency;
+  @HiveField(5)
   String? dishCalories;
+  @HiveField(6)
   String? dishDescription;
   bool? dishAvailability;
+  @HiveField(7)
   String? dishType;
   String? nexturl;
+  @HiveField(8)
   List<AddonCat>? addonCat;
+  @HiveField(9)
+  int quantity = 1;
+  @HiveField(10)
+  double tPrice = 0;
 
   factory CategoryDish.fromJson(Map<String, dynamic> json) => CategoryDish(
         dishId: json["dish_id"],
@@ -192,8 +216,11 @@ class CategoryDish {
       };
 }
 
-// ignore: constant_identifier_names
-enum DishCurrency { SAR }
+@HiveType(typeId: 3)
+enum DishCurrency {
+  @HiveField(0)
+  SAR
+}
 
 final dishCurrencyValues = EnumValues({"SAR": DishCurrency.SAR});
 

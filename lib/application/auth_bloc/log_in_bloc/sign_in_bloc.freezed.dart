@@ -22,7 +22,6 @@ mixin _$SignInEvent {
     required TResult Function() signInWithGooglePressed,
     required TResult Function(String countryCode) selectCountryCode,
     required TResult Function(String phoneNumber) enteringPhoneNumber,
-    required TResult Function(String otp) enteringOtp,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -31,7 +30,6 @@ mixin _$SignInEvent {
     TResult? Function()? signInWithGooglePressed,
     TResult? Function(String countryCode)? selectCountryCode,
     TResult? Function(String phoneNumber)? enteringPhoneNumber,
-    TResult? Function(String otp)? enteringOtp,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -40,7 +38,6 @@ mixin _$SignInEvent {
     TResult Function()? signInWithGooglePressed,
     TResult Function(String countryCode)? selectCountryCode,
     TResult Function(String phoneNumber)? enteringPhoneNumber,
-    TResult Function(String otp)? enteringOtp,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -51,7 +48,6 @@ mixin _$SignInEvent {
         signInWithGooglePressed,
     required TResult Function(SelectCountryCode value) selectCountryCode,
     required TResult Function(EnteringPhoneNumber value) enteringPhoneNumber,
-    required TResult Function(EnteringOtp value) enteringOtp,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -60,7 +56,6 @@ mixin _$SignInEvent {
     TResult? Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult? Function(SelectCountryCode value)? selectCountryCode,
     TResult? Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult? Function(EnteringOtp value)? enteringOtp,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,7 +64,6 @@ mixin _$SignInEvent {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult Function(SelectCountryCode value)? selectCountryCode,
     TResult Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult Function(EnteringOtp value)? enteringOtp,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -134,7 +128,6 @@ class _$_Started implements _Started {
     required TResult Function() signInWithGooglePressed,
     required TResult Function(String countryCode) selectCountryCode,
     required TResult Function(String phoneNumber) enteringPhoneNumber,
-    required TResult Function(String otp) enteringOtp,
   }) {
     return started();
   }
@@ -146,7 +139,6 @@ class _$_Started implements _Started {
     TResult? Function()? signInWithGooglePressed,
     TResult? Function(String countryCode)? selectCountryCode,
     TResult? Function(String phoneNumber)? enteringPhoneNumber,
-    TResult? Function(String otp)? enteringOtp,
   }) {
     return started?.call();
   }
@@ -158,7 +150,6 @@ class _$_Started implements _Started {
     TResult Function()? signInWithGooglePressed,
     TResult Function(String countryCode)? selectCountryCode,
     TResult Function(String phoneNumber)? enteringPhoneNumber,
-    TResult Function(String otp)? enteringOtp,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -175,7 +166,6 @@ class _$_Started implements _Started {
         signInWithGooglePressed,
     required TResult Function(SelectCountryCode value) selectCountryCode,
     required TResult Function(EnteringPhoneNumber value) enteringPhoneNumber,
-    required TResult Function(EnteringOtp value) enteringOtp,
   }) {
     return started(this);
   }
@@ -187,7 +177,6 @@ class _$_Started implements _Started {
     TResult? Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult? Function(SelectCountryCode value)? selectCountryCode,
     TResult? Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult? Function(EnteringOtp value)? enteringOtp,
   }) {
     return started?.call(this);
   }
@@ -199,7 +188,6 @@ class _$_Started implements _Started {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult Function(SelectCountryCode value)? selectCountryCode,
     TResult Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult Function(EnteringOtp value)? enteringOtp,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -256,7 +244,6 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
     required TResult Function() signInWithGooglePressed,
     required TResult Function(String countryCode) selectCountryCode,
     required TResult Function(String phoneNumber) enteringPhoneNumber,
-    required TResult Function(String otp) enteringOtp,
   }) {
     return signInWithGooglePressed();
   }
@@ -268,7 +255,6 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
     TResult? Function()? signInWithGooglePressed,
     TResult? Function(String countryCode)? selectCountryCode,
     TResult? Function(String phoneNumber)? enteringPhoneNumber,
-    TResult? Function(String otp)? enteringOtp,
   }) {
     return signInWithGooglePressed?.call();
   }
@@ -280,7 +266,6 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
     TResult Function()? signInWithGooglePressed,
     TResult Function(String countryCode)? selectCountryCode,
     TResult Function(String phoneNumber)? enteringPhoneNumber,
-    TResult Function(String otp)? enteringOtp,
     required TResult orElse(),
   }) {
     if (signInWithGooglePressed != null) {
@@ -297,7 +282,6 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
         signInWithGooglePressed,
     required TResult Function(SelectCountryCode value) selectCountryCode,
     required TResult Function(EnteringPhoneNumber value) enteringPhoneNumber,
-    required TResult Function(EnteringOtp value) enteringOtp,
   }) {
     return signInWithGooglePressed(this);
   }
@@ -309,7 +293,6 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
     TResult? Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult? Function(SelectCountryCode value)? selectCountryCode,
     TResult? Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult? Function(EnteringOtp value)? enteringOtp,
   }) {
     return signInWithGooglePressed?.call(this);
   }
@@ -321,7 +304,6 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult Function(SelectCountryCode value)? selectCountryCode,
     TResult Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult Function(EnteringOtp value)? enteringOtp,
     required TResult orElse(),
   }) {
     if (signInWithGooglePressed != null) {
@@ -404,7 +386,6 @@ class _$SelectCountryCode implements SelectCountryCode {
     required TResult Function() signInWithGooglePressed,
     required TResult Function(String countryCode) selectCountryCode,
     required TResult Function(String phoneNumber) enteringPhoneNumber,
-    required TResult Function(String otp) enteringOtp,
   }) {
     return selectCountryCode(countryCode);
   }
@@ -416,7 +397,6 @@ class _$SelectCountryCode implements SelectCountryCode {
     TResult? Function()? signInWithGooglePressed,
     TResult? Function(String countryCode)? selectCountryCode,
     TResult? Function(String phoneNumber)? enteringPhoneNumber,
-    TResult? Function(String otp)? enteringOtp,
   }) {
     return selectCountryCode?.call(countryCode);
   }
@@ -428,7 +408,6 @@ class _$SelectCountryCode implements SelectCountryCode {
     TResult Function()? signInWithGooglePressed,
     TResult Function(String countryCode)? selectCountryCode,
     TResult Function(String phoneNumber)? enteringPhoneNumber,
-    TResult Function(String otp)? enteringOtp,
     required TResult orElse(),
   }) {
     if (selectCountryCode != null) {
@@ -445,7 +424,6 @@ class _$SelectCountryCode implements SelectCountryCode {
         signInWithGooglePressed,
     required TResult Function(SelectCountryCode value) selectCountryCode,
     required TResult Function(EnteringPhoneNumber value) enteringPhoneNumber,
-    required TResult Function(EnteringOtp value) enteringOtp,
   }) {
     return selectCountryCode(this);
   }
@@ -457,7 +435,6 @@ class _$SelectCountryCode implements SelectCountryCode {
     TResult? Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult? Function(SelectCountryCode value)? selectCountryCode,
     TResult? Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult? Function(EnteringOtp value)? enteringOtp,
   }) {
     return selectCountryCode?.call(this);
   }
@@ -469,7 +446,6 @@ class _$SelectCountryCode implements SelectCountryCode {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult Function(SelectCountryCode value)? selectCountryCode,
     TResult Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult Function(EnteringOtp value)? enteringOtp,
     required TResult orElse(),
   }) {
     if (selectCountryCode != null) {
@@ -559,7 +535,6 @@ class _$EnteringPhoneNumber implements EnteringPhoneNumber {
     required TResult Function() signInWithGooglePressed,
     required TResult Function(String countryCode) selectCountryCode,
     required TResult Function(String phoneNumber) enteringPhoneNumber,
-    required TResult Function(String otp) enteringOtp,
   }) {
     return enteringPhoneNumber(phoneNumber);
   }
@@ -571,7 +546,6 @@ class _$EnteringPhoneNumber implements EnteringPhoneNumber {
     TResult? Function()? signInWithGooglePressed,
     TResult? Function(String countryCode)? selectCountryCode,
     TResult? Function(String phoneNumber)? enteringPhoneNumber,
-    TResult? Function(String otp)? enteringOtp,
   }) {
     return enteringPhoneNumber?.call(phoneNumber);
   }
@@ -583,7 +557,6 @@ class _$EnteringPhoneNumber implements EnteringPhoneNumber {
     TResult Function()? signInWithGooglePressed,
     TResult Function(String countryCode)? selectCountryCode,
     TResult Function(String phoneNumber)? enteringPhoneNumber,
-    TResult Function(String otp)? enteringOtp,
     required TResult orElse(),
   }) {
     if (enteringPhoneNumber != null) {
@@ -600,7 +573,6 @@ class _$EnteringPhoneNumber implements EnteringPhoneNumber {
         signInWithGooglePressed,
     required TResult Function(SelectCountryCode value) selectCountryCode,
     required TResult Function(EnteringPhoneNumber value) enteringPhoneNumber,
-    required TResult Function(EnteringOtp value) enteringOtp,
   }) {
     return enteringPhoneNumber(this);
   }
@@ -612,7 +584,6 @@ class _$EnteringPhoneNumber implements EnteringPhoneNumber {
     TResult? Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult? Function(SelectCountryCode value)? selectCountryCode,
     TResult? Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult? Function(EnteringOtp value)? enteringOtp,
   }) {
     return enteringPhoneNumber?.call(this);
   }
@@ -624,7 +595,6 @@ class _$EnteringPhoneNumber implements EnteringPhoneNumber {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
     TResult Function(SelectCountryCode value)? selectCountryCode,
     TResult Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult Function(EnteringOtp value)? enteringOtp,
     required TResult orElse(),
   }) {
     if (enteringPhoneNumber != null) {
@@ -641,158 +611,6 @@ abstract class EnteringPhoneNumber implements SignInEvent {
   String get phoneNumber;
   @JsonKey(ignore: true)
   _$$EnteringPhoneNumberCopyWith<_$EnteringPhoneNumber> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$EnteringOtpCopyWith<$Res> {
-  factory _$$EnteringOtpCopyWith(
-          _$EnteringOtp value, $Res Function(_$EnteringOtp) then) =
-      __$$EnteringOtpCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String otp});
-}
-
-/// @nodoc
-class __$$EnteringOtpCopyWithImpl<$Res>
-    extends _$SignInEventCopyWithImpl<$Res, _$EnteringOtp>
-    implements _$$EnteringOtpCopyWith<$Res> {
-  __$$EnteringOtpCopyWithImpl(
-      _$EnteringOtp _value, $Res Function(_$EnteringOtp) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? otp = null,
-  }) {
-    return _then(_$EnteringOtp(
-      null == otp
-          ? _value.otp
-          : otp // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$EnteringOtp implements EnteringOtp {
-  const _$EnteringOtp(this.otp);
-
-  @override
-  final String otp;
-
-  @override
-  String toString() {
-    return 'SignInEvent.enteringOtp(otp: $otp)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$EnteringOtp &&
-            (identical(other.otp, otp) || other.otp == otp));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, otp);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$EnteringOtpCopyWith<_$EnteringOtp> get copyWith =>
-      __$$EnteringOtpCopyWithImpl<_$EnteringOtp>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function() signInWithGooglePressed,
-    required TResult Function(String countryCode) selectCountryCode,
-    required TResult Function(String phoneNumber) enteringPhoneNumber,
-    required TResult Function(String otp) enteringOtp,
-  }) {
-    return enteringOtp(otp);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function()? signInWithGooglePressed,
-    TResult? Function(String countryCode)? selectCountryCode,
-    TResult? Function(String phoneNumber)? enteringPhoneNumber,
-    TResult? Function(String otp)? enteringOtp,
-  }) {
-    return enteringOtp?.call(otp);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? signInWithGooglePressed,
-    TResult Function(String countryCode)? selectCountryCode,
-    TResult Function(String phoneNumber)? enteringPhoneNumber,
-    TResult Function(String otp)? enteringOtp,
-    required TResult orElse(),
-  }) {
-    if (enteringOtp != null) {
-      return enteringOtp(otp);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(SignInWithGooglePressed value)
-        signInWithGooglePressed,
-    required TResult Function(SelectCountryCode value) selectCountryCode,
-    required TResult Function(EnteringPhoneNumber value) enteringPhoneNumber,
-    required TResult Function(EnteringOtp value) enteringOtp,
-  }) {
-    return enteringOtp(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(SignInWithGooglePressed value)? signInWithGooglePressed,
-    TResult? Function(SelectCountryCode value)? selectCountryCode,
-    TResult? Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult? Function(EnteringOtp value)? enteringOtp,
-  }) {
-    return enteringOtp?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(SignInWithGooglePressed value)? signInWithGooglePressed,
-    TResult Function(SelectCountryCode value)? selectCountryCode,
-    TResult Function(EnteringPhoneNumber value)? enteringPhoneNumber,
-    TResult Function(EnteringOtp value)? enteringOtp,
-    required TResult orElse(),
-  }) {
-    if (enteringOtp != null) {
-      return enteringOtp(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class EnteringOtp implements SignInEvent {
-  const factory EnteringOtp(final String otp) = _$EnteringOtp;
-
-  String get otp;
-  @JsonKey(ignore: true)
-  _$$EnteringOtpCopyWith<_$EnteringOtp> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

@@ -5,6 +5,7 @@ import 'package:ecom_store/domain/core/constants.dart';
 import 'package:ecom_store/infrastructure/auth/firebase_auth_facade.dart';
 import 'package:ecom_store/presentation/screen/auth/sign_in_with_phone_screen.dart';
 import 'package:ecom_store/presentation/screen/home/home_screen.dart';
+import 'package:ecom_store/presentation/widgets/custom_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
@@ -70,6 +71,7 @@ class SignInSignUpScreen extends StatelessWidget {
                   'Register or Sign In with',
                   style: smallText,
                 ),
+                if (state.isSubmitting) const CustomLoader(),
                 SizedBox(
                   width: screenWidth,
                   height: 80,
