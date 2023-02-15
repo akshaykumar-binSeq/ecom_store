@@ -18,7 +18,7 @@ class CartScreen extends StatelessWidget {
       create: (context) => CartBloc()..add(const CartEvent.started()),
       child: WillPopScope(
         onWillPop: () {
-          Get.to(() => const HomeScreen());
+          Get.offAll(() => const HomeScreen());
           return Future.value(true);
         },
         child: const Scaffold(
@@ -144,7 +144,7 @@ class CartWidget extends StatelessWidget {
                                           const TextStyle(color: Colors.white),
                                     );
 
-                                    Get.to(() => const HomeScreen());
+                                    Get.offAll(() => const HomeScreen());
                                   },
                                   style: ElevatedButton.styleFrom(
                                       backgroundColor: Colors.green),

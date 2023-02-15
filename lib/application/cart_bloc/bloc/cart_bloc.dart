@@ -5,9 +5,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hive/hive.dart';
 
+part 'cart_bloc.freezed.dart';
 part 'cart_event.dart';
 part 'cart_state.dart';
-part 'cart_bloc.freezed.dart';
 
 class CartBloc extends Bloc<CartEvent, CartState> {
   CartBloc() : super(CartState.initial()) {
@@ -55,8 +55,13 @@ class CartBloc extends Bloc<CartEvent, CartState> {
           index += 1;
         }
 
+        event.categoryDish.tPrice = event.categoryDish.quantity *
+            double.parse(event.categoryDish.dishPrice ?? '1');
+
         cartBox.add(event.categoryDish);
+
         int cartCount = cartBox.length;
+
         emit(
           state.copyWith(
             cartCount: cartCount,
