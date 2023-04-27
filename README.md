@@ -2,7 +2,7 @@
 
 Flutter Ecommerce App.
 
-Excited to share my latest project with you all! As a programmer working in Dart/Flutter, I developed an ecommerce application using DDD architecture with bloc state management and getx state management for routing.
+I developed an ecommerce application using DDD architecture with bloc state management and getx state management for routing.
 
 The app features an authentication system that is implemented using Google Auth and Phone Auth with Firebase services. Users can log in using their Google account or phone number, and their profile details, including name, email/phone number, profile picture, and Firebase user ID, are displayed in a side drawer.
 
@@ -12,5 +12,35 @@ I am proud to say that I completed this project in just five days without compro
 
 I welcome any suggestions and corrections, as I am always open to learning and improving my skills. Thank you for reading!
 
-APK File Link: https://lnkd.in/gPVpHcpy
+[#] Software Architecture: Android/iOS
+ # Introduction:
+The software architecture is based on the Domain-Driven Design (DDD) architecture, with clear separation of concerns 
+between the different layers.
+
+ # High-Level Architecture: 
+Domain-Driven Design (DDD) architecture, divided into multiple layers, including 
+[$] Presentation Layer
+[$] Application Layer
+[$] Domain Layer
+[$] Infrastructure Layer
+
+ # Presentation Layer:
+Defines User Interface for application. BLoC Pattern is used for State management which implements Flutter 
+BLoC package. Routing between screens in application is implemented with GetX package.
+
+ # Application Layer:
+Defines Business Logic for application. Business logic is implemented using BLoC pattern which separates business logic from presentation layer. Application Layer interact with Domain Layer to retrieve and manipulate data.
+
+ # Domain Layer:
+Defines Core Business Logic for application. Includes Entities, Value Objects, Domain Services etc. Domain Layer
+interacts with Infrastructure Layer to retrieve and persist data.
+
+ # Infrastructure Layer:
+Defines Data Provider and Persistence Mechanism for application. Firebase Auth package implements user authentication and Flutter Hive package implements local data storage.
+
+ # Data Flow:
+The data flow in architecture is Unidirectional, following the BLoC pattern. The Presentation Layer send events to 
+Application Layer, which processes the events and emits new state. The new states are then received by the Application 
+Layer, which updates the user interface accordingly.
+
 
