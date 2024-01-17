@@ -27,13 +27,16 @@ Product Listings
 API-Driven Product Display:
 Fetches diverse food product data from an external API.
 Products elegantly showcased on the home screen for a captivating shopping experience.
+
 Effortless Cart Addition:
 Users can conveniently add products to their cart directly from the home screen.
 Cart Management
+
 Hive Database Integration:
 Seamless local cart storage leveraging the power of Hive database.
 Users can effortlessly manage product quantities from both the home and cart screens.
 Order Placement
+
 Intuitive Order Process:
 Clear and straightforward order placement process.
 Initiates cart clearance upon order completion, ensuring a smooth transition back to the home screen.
