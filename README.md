@@ -1,46 +1,60 @@
-# ecom_store
+Flutter E-commerce App
+Welcome to our feature-rich E-commerce application, meticulously crafted with the robust architecture of Domain-Driven Design (DDD). This Flutter app utilizes Flutter Bloc and GetX for seamless state and navigation management, providing a delightful shopping experience.
 
-Flutter Ecommerce App.
+Features
+Authentication System
+Google Sign-In and Phone Authentication via Firebase:
 
-I developed an ecommerce application using DDD architecture with bloc state management and getx state management for routing.
+Streamlined and secure login options for users.
+Firebase services power authentication functionalities.
+User Profile Details:
 
-The app features an authentication system that is implemented using Google Auth and Phone Auth with Firebase services. Users can log in using their Google account or phone number, and their profile details, including name, email/phone number, profile picture, and Firebase user ID, are displayed in a side drawer.
+Display comprehensive user information in a side drawer.
+Includes user's name, email/phone, profile picture, and Firebase user ID.
+Product Listings
+API-Driven Product Display:
 
-The home screen displays food products listed from an API, and users can easily add any product to their cart and increment or decrement its quantity from the home screen itself. The cart is implemented using Hive database, where the products added to the cart are stored before placing the order. The cart screen displays the added products, and users can increment or decrement the quantity of each product. Placing an order clears the cart and navigates the user back to the home screen.
+Fetches diverse food product data from an external API.
+Products elegantly showcased on the home screen for a captivating shopping experience.
+Effortless Cart Addition:
 
-I am proud to say that I completed this project in just five days without compromising the quality and user experience, and I have handled most exceptions to ensure the expected working of the application. I actually created this app for a machine test in a company, and I am sharing the APK for anyone interested in testing and reviewing the code. This project can serve as a base reference for enterprise-level scalable ecommerce applications in DDD architecture with Firebase authentication and local database for the cart.
-
-I welcome any suggestions and corrections, as I am always open to learning and improving my skills. Thank you for reading!
+Users can conveniently add products to their cart directly from the home screen.
+Cart Management
+Hive Database Integration:
+Seamless local cart storage leveraging the power of Hive database.
+Users can effortlessly manage product quantities from both the home and cart screens.
+Order Placement
+Intuitive Order Process:
+Clear and straightforward order placement process.
+Initiates cart clearance upon order completion, ensuring a smooth transition back to the home screen.
 
 [#] Software Architecture: Android/iOS
  # Introduction:
 The software architecture is based on the Domain-Driven Design (DDD) architecture, with clear separation of concerns 
 between the different layers.
 
- # High-Level Architecture: 
-Domain-Driven Design (DDD) architecture, divided into multiple layers, including 
-[$] Presentation Layer
-[$] Application Layer
-[$] Domain Layer
-[$] Infrastructure Layer
+## High-Level Architecture
 
- # Presentation Layer:
-Defines User Interface for application. BLoC Pattern is used for State management which implements Flutter 
-BLoC package. Routing between screens in application is implemented with GetX package.
+- **Presentation Layer:**
+  - Defines the user interface using the BLoC pattern for state management (implemented with Flutter BLoC package).
+  - Screen navigation is facilitated by the GetX package.
 
- # Application Layer:
-Defines Business Logic for application. Business logic is implemented using BLoC pattern which separates business logic from presentation layer. Application Layer interact with Domain Layer to retrieve and manipulate data.
+- **Application Layer:**
+  - Encompasses the business logic, implementing the BLoC pattern to separate logic from the presentation layer.
+  - Interacts with the Domain Layer for data manipulation and retrieval.
 
- # Domain Layer:
-Defines Core Business Logic for application. Includes Entities, Value Objects, Domain Services etc. Domain Layer
-interacts with Infrastructure Layer to retrieve and persist data.
+- **Domain Layer:**
+  - Houses core business logic, including Entities, Value Objects, and Domain Services.
+  - Interaction with the Infrastructure Layer facilitates data retrieval and persistence.
 
- # Infrastructure Layer:
-Defines Data Provider and Persistence Mechanism for application. Firebase Auth package implements user authentication and Flutter Hive package implements local data storage.
+- **Infrastructure Layer:**
+  - Defines data providers and the persistence mechanism.
+  - Utilizes Firebase Auth for user authentication and Flutter Hive for local data storage.
 
- # Data Flow:
-The data flow in architecture is Unidirectional, following the BLoC pattern. The Presentation Layer send events to 
-Application Layer, which processes the events and emits new state. The new states are then received by the Application 
-Layer, which updates the user interface accordingly.
+## Data Flow
 
+The architecture follows a unidirectional data flow, adhering to the BLoC pattern. Here's a simplified overview:
+- Presentation Layer sends events to the Application Layer.
+- Application Layer processes events and emits new states.
+- New states are received by the Presentation Layer, updating the user interface accordingly.
 
