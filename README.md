@@ -1,23 +1,33 @@
 Flutter E-commerce App
 Welcome to our feature-rich E-commerce application, meticulously crafted with the robust architecture of Domain-Driven Design (DDD). This Flutter app utilizes Flutter Bloc and GetX for seamless state and navigation management, providing a delightful shopping experience.
 
+Key Features:
+
+Authentication System:
+Secure Google Sign-In and Phone Authentication via Firebase.
+Explore user profile details, including name, email/phone, and profile picture.
+
+Product Listings:
+API-Driven display for a diverse range of food products.
+Effortlessly add products to your cart directly from the home screen.
+
+Cart Management:
+Seamless integration with Hive Database for local cart storage.
+Manage product quantities effortlessly from both home and cart screens.
+
+Order Placement:
+Streamlined order process with cart clearance for a smooth transition back to the home screen.
 Features
-Authentication System
-Google Sign-In and Phone Authentication via Firebase:
 
-Streamlined and secure login options for users.
-Firebase services power authentication functionalities.
 User Profile Details:
-
 Display comprehensive user information in a side drawer.
 Includes user's name, email/phone, profile picture, and Firebase user ID.
 Product Listings
-API-Driven Product Display:
 
+API-Driven Product Display:
 Fetches diverse food product data from an external API.
 Products elegantly showcased on the home screen for a captivating shopping experience.
 Effortless Cart Addition:
-
 Users can conveniently add products to their cart directly from the home screen.
 Cart Management
 Hive Database Integration:
