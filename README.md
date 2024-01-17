@@ -42,32 +42,24 @@ Clear and straightforward order placement process.
 Initiates cart clearance upon order completion, ensuring a smooth transition back to the home screen.
 
 [#] Software Architecture: Android/iOS
- # Introduction:
-The software architecture is based on the Domain-Driven Design (DDD) architecture, with clear separation of concerns 
-between the different layers.
 
-## High-Level Architecture
+Introduction:
+The software architecture is based on the Domain-Driven Design (DDD) architecture, with clear separation of concerns between the different layers.
 
-- **Presentation Layer:**
-  - Defines the user interface using the BLoC pattern for state management (implemented with Flutter BLoC package).
-  - Screen navigation is facilitated by the GetX package.
+High-Level Architecture:
+Domain-Driven Design (DDD) architecture, divided into multiple layers, including [$] Presentation Layer [$] Application Layer [$] Domain Layer [$] Infrastructure Layer
 
-- **Application Layer:**
-  - Encompasses the business logic, implementing the BLoC pattern to separate logic from the presentation layer.
-  - Interacts with the Domain Layer for data manipulation and retrieval.
+Presentation Layer:
+Defines User Interface for application. BLoC Pattern is used for State management which implements Flutter BLoC package. Routing between screens in application is implemented with GetX package.
 
-- **Domain Layer:**
-  - Houses core business logic, including Entities, Value Objects, and Domain Services.
-  - Interaction with the Infrastructure Layer facilitates data retrieval and persistence.
+Application Layer:
+Defines Business Logic for application. Business logic is implemented using BLoC pattern which separates business logic from presentation layer. Application Layer interact with Domain Layer to retrieve and manipulate data.
 
-- **Infrastructure Layer:**
-  - Defines data providers and the persistence mechanism.
-  - Utilizes Firebase Auth for user authentication and Flutter Hive for local data storage.
+Domain Layer:
+Defines Core Business Logic for application. Includes Entities, Value Objects, Domain Services etc. Domain Layer interacts with Infrastructure Layer to retrieve and persist data.
 
-## Data Flow
+Infrastructure Layer:
+Defines Data Provider and Persistence Mechanism for application. Firebase Auth package implements user authentication and Flutter Hive package implements local data storage.
 
-The architecture follows a unidirectional data flow, adhering to the BLoC pattern. Here's a simplified overview:
-- Presentation Layer sends events to the Application Layer.
-- Application Layer processes events and emits new states.
-- New states are received by the Presentation Layer, updating the user interface accordingly.
-
+Data Flow:
+The data flow in architecture is Unidirectional, following the BLoC pattern. The Presentation Layer send events to Application Layer, which processes the events and emits new state. The new states are then received by the Application Layer, which updates the user interface accordingly.
